@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#7655df" />
+  <meta name="description" content="Study Swap: aprende, practica y alcanza tus metas." />
+  <title>Study Swap — Aprende a tu ritmo</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#inicio" aria-label="Study Swap, inicio" data-nav="home">
+        <span class="brand-mark">✦</span><span>study<span class="brand-swap">swap</span></span>
+      </a>
+      <div class="sidebar-profile">
+        <div class="avatar avatar-small" id="sideAvatar">🧑🏻‍🎓</div>
+        <div class="sidebar-user"><strong id="sideName">Jhonny</strong><span>Estudiante · 6.º grado</span></div>
+        <span class="online-dot"></span>
+      </div>
+      <nav class="side-nav" aria-label="Navegación principal">
+        <button class="nav-item active" data-nav="home"><span class="nav-icon">⌂</span>Inicio</button>
+        <button class="nav-item" data-nav="subjects"><span class="nav-icon">▦</span>Materias</button>
+        <button class="nav-item" data-nav="progress"><span class="nav-icon">▥</span>Mi progreso</button>
+        <button class="nav-item" data-nav="badges"><span class="nav-icon">✧</span>Insignias</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-tip"><span>💡</span><strong>Un paso a la vez</strong><p>Aprender un poquito cada día hace la diferencia.</p></div>
+        <button class="nav-item" data-nav="profile"><span class="nav-icon">◉</span>Mi perfil</button>
+        <button class="nav-item" data-nav="settings"><span class="nav-icon">⚙</span>Configuración</button>
+      </div>
+      <div class="sidebar-foot">Hecho para aprender <span>♥</span></div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu icon-button" id="menuToggle" aria-label="Abrir menú">☰</button>
+        <div class="breadcrumb" id="breadcrumb">Tu espacio de aprendizaje <span>✦</span></div>
+        <div class="top-actions">
+          <button class="streak-pill" data-nav="challenge" title="Reto diario">🔥 <span id="topStreak">7</span> días</button>
+          <button class="icon-button notification-button" data-nav="notifications" aria-label="Notificaciones">♧<i class="notification-dot"></i></button>
+          <button class="top-avatar" data-nav="profile" id="topAvatar">🧑🏻‍🎓</button>
+        </div>
+      </header>
+
+      <div class="page-wrap" id="pageWrap">
+        <section class="page active" id="page-home" data-page="home">
+          <div class="welcome-row">
+            <div><div class="eyebrow">LUNES, 16 DE NOVIEMBRE <span class="sparkle">✦</span></div><h1>¡Hola, <span id="welcomeName">Jhonny</span>! <span class="wave">👋</span></h1><p class="muted">Hoy es un gran día para aprender algo nuevo.</p></div>
+            <div class="welcome-art" aria-hidden="true"><span class="art-sun">✦</span><div class="art-book">📚</div><span class="art-star">✧</span></div>
+          </div>
+          <div class="home-grid">
+            <div class="main-column">
+              <article class="daily-card card-shell">
+                <div class="daily-top"><div class="daily-flame">🔥</div><div class="grow"><span class="eyebrow light-eyebrow">TU MISIÓN DE HOY</span><h2>Reto diario</h2><p>Resuelve 5 preguntas de Matemática</p></div><span class="daily-tag">+80 pts</span></div>
+                <div class="daily-bottom"><div class="progress-track"><span id="dailyBar" style="width:40%"></span></div><strong id="dailyProgress">2/5</strong><button class="round-arrow" data-action="daily">→</button></div>
+                <div class="daily-confetti">✦</div>
+              </article>
+              <div class="section-heading"><div><span class="eyebrow">SIGUE A TU RITMO</span><h2>Tu espacio de aprendizaje</h2></div><button class="text-link" data-nav="subjects">Ver materias <span>→</span></button></div>
+              <div class="quick-grid">
+                <button class="quick-card quick-violet" data-action="continue"><span class="quick-icon">📖</span><strong>Continuar<br>aprendiendo</strong><small>Retoma donde quedaste</small><span class="quick-arrow">↗</span></button>
+                <button class="quick-card quick-mint" data-nav="progress"><span class="quick-icon">🌱</span><strong>Mi progreso</strong><small>Mira cuánto has avanzado</small><span class="quick-arrow">↗</span></button>
+                <button class="quick-card quick-peach" data-nav="badges"><span class="quick-icon">🏅</span><strong>Mis logros</strong><small>Colecciona insignias</small><span class="quick-arrow">↗</span></button>
+              </div>
+              <div class="section-heading recent-heading"><div><span class="eyebrow">TU ACTIVIDAD</span><h2>Continúa tu aprendizaje</h2></div><button class="text-link" data-nav="video">Ver todo <span>→</span></button></div>
+              <button class="activity-card" data-action="open-video"><div class="activity-thumb"><span class="play-circle">▶</span><span class="thumb-label">MATEMÁTICA</span></div><div class="activity-copy"><span class="mini-label">VIDEO · 6 MIN</span><strong>Fracciones — Parte 1</strong><p>Aprende a reconocer y representar fracciones.</p><div class="tiny-progress"><span></span></div></div><span class="activity-chevron">›</span></button>
+            </div>
+            <aside class="home-aside">
+              <article class="side-stat card-shell"><div class="side-stat-head"><span>Tu resumen</span><span class="stat-emoji">✨</span></div><div class="level-line"><div class="level-badge">⭐</div><div><small>NIVEL ACTUAL</small><strong id="homeLevel">12</strong></div><div class="level-next">Nivel 13<br><b>75%</b></div></div><div class="progress-track slim"><span style="width:75%"></span></div><div class="stat-tiles"><div><strong id="homePoints">1,250</strong><small>Puntos</small></div><div><strong id="homeStreak">7 🔥</strong><small>Racha actual</small></div></div></article>
+              <article class="quote-card"><span class="quote-mark">“</span><p>El aprendizaje es un viaje, no una carrera.</p><small>— Tu recordatorio de hoy</small><span class="quote-spark">✦</span></article>
+              <article class="next-card card-shell"><div class="next-icon">🧠</div><div><small>TE RECOMENDAMOS</small><strong>Practica fracciones</strong><p>5 minutos pueden hacer la diferencia.</p><button class="text-link" data-action="start-quiz">Empezar ahora →</button></div></article>
+            </aside>
+          </div>
+        </section>
+
+        <section class="page" id="page-profile" data-page="profile">
+          <div class="page-title-row"><div><span class="eyebrow">TU CUENTA</span><h1>Mi perfil</h1><p class="muted">Este es tu espacio. ¡Hazlo tuyo!</p></div><button class="button button-secondary" data-action="edit-profile">✎ Editar perfil</button></div>
+          <div class="profile-layout">
+            <article class="profile-hero card-shell"><div class="profile-avatar-wrap"><div class="avatar avatar-large" id="profileAvatar">🧑🏻‍🎓</div><span class="verified">✓</span></div><h2 id="profileName">Jhonny</h2><p class="muted" id="profileGrade">Estudiante de 6.º grado</p><p class="profile-motto">“Aprende · Juega · Avanza”</p><div class="profile-stats"><div><span class="stat-icon violet">✧</span><strong id="profileLevel">12</strong><small>Nivel</small></div><div><span class="stat-icon orange">◉</span><strong id="profilePoints">1,250</strong><small>Puntos</small></div><div><span class="stat-icon coral">🔥</span><strong id="profileStreak">7 días</strong><small>Racha</small></div></div></article>
+            <div class="profile-details"><article class="card-shell detail-card"><div class="card-heading"><div><span class="eyebrow">MANTÉN EL IMPULSO</span><h2>Mi meta</h2></div><button class="edit-small" data-action="edit-profile">Editar</button></div><p class="goal-text" id="goalText">Seguir aprendiendo y mejorar cada día.</p></article><article class="card-shell detail-card"><span class="eyebrow">UN POCO MÁS SOBRE TI</span><h2>Información</h2><div class="info-list"><div><span>🎓 Grado escolar</span><strong id="infoGrade">6.º grado</strong></div><div><span>📚 Materias favoritas</span><strong id="infoFav">Matemática, Ciencia</strong></div><div><span>🎨 Estilo de aprendizaje</span><strong id="infoStyle">Visual</strong></div><div><span>⏱ Tiempo de estudio</span><strong id="infoTime">30 min/día</strong></div><div><span>🌟 Frase favorita</span><strong>Aprende · Juega · Avanza</strong></div></div></article></div>
+          </div>
+        </section>
+
+        <section class="page" id="page-subjects" data-page="subjects">
+          <div class="page-title-row"><div><span class="eyebrow">DESCUBRE Y APRENDE</span><h1>Tus materias</h1><p class="muted">Elige una materia para empezar a explorar.</p></div><div class="subject-count">7 materias <span>✦</span></div></div>
+          <div class="subjects-grid" id="subjectsGrid"></div>
+          <div class="soft-banner"><span>🌈</span><div><strong>¡Tu curiosidad no tiene límites!</strong><p>Prueba una materia nueva y descubre lo que puedes lograr.</p></div></div>
+        </section>
+
+        <section class="page" id="page-subject" data-page="subject">
+          <button class="back-link" data-nav="subjects">← Todas las materias</button>
+          <div class="subject-hero"><div class="subject-hero-icon" id="subjectIcon">🧮</div><div><span class="eyebrow">TU RUTA DE APRENDIZAJE</span><h1 id="subjectTitle">Matemática</h1><p class="muted">1.º – 6.º grado · Aprende paso a paso</p></div><div class="subject-completion"><strong id="subjectPercent">60%</strong><span>completado</span></div></div>
+          <div class="tabs" id="subjectTabs"><button class="tab active" data-tab="topics">Temas</button><button class="tab" data-tab="levels">Niveles</button></div>
+          <div id="subjectTopics" class="topic-list"></div>
+          <div id="subjectLevels" class="levels-grid hidden"></div>
+        </section>
+
+        <section class="page" id="page-lesson" data-page="lesson">
+          <button class="back-link" data-action="back-subject">← Volver a Matemática</button>
+          <div class="lesson-layout"><article class="lesson-main card-shell"><div class="lesson-meta"><span class="lesson-chip" id="lessonCategory">MATEMÁTICA · TEMA 02</span><span class="read-time">◷ 4 min de lectura</span></div><h1 id="lessonTitle">Fracciones</h1><div class="lesson-callout"><div><span class="eyebrow">APRENDAMOS JUNTOS</span><h2 id="lessonQuestion">¿Qué son las fracciones?</h2><p>Una fracción representa una parte de un todo. Nos ayuda a expresar cantidades que no siempre son unidades completas.</p></div><div class="fraction-visual"><div class="fraction-circle"><span class="quarter q1"></span><span class="quarter q2"></span><span class="quarter q3"></span><span class="quarter q4"></span></div><div class="fraction-label"><strong>3</strong><i></i><strong>4</strong></div></div></div><div class="concept-grid"><div class="concept-card"><span class="concept-number">01</span><div><h3>Numerador</h3><p>Indica cuántas partes tomamos del total.</p></div></div><div class="concept-card"><span class="concept-number denominator">02</span><div><h3>Denominador</h3><p>Indica en cuántas partes iguales se divide el todo.</p></div></div></div><div class="example-box"><div><span class="eyebrow">MIRA ESTE EJEMPLO</span><h3>3 de 4 partes</h3><p>Si dividimos una barra en 4 partes iguales y coloreamos 3, representamos <strong>3/4</strong>.</p></div><div class="fraction-bar"><span></span><span></span><span></span><span class="empty"></span></div></div><div class="remember-box"><span>💡</span><div><strong>¡Recuerda!</strong><p>El denominador nunca puede ser cero.</p></div></div><button class="button button-primary button-wide" data-action="lesson-next">¡Lo entendí! Siguiente <span>→</span></button></article><aside class="lesson-aside"><div class="lesson-side-illustration">🪄</div><h3>Aprende haciendo</h3><p>Después de esta explicación, pon a prueba lo que aprendiste con unas preguntas.</p><div class="mini-step"><span>✓</span> Lee la explicación</div><div class="mini-step"><span>2</span> Mira los ejemplos</div><div class="mini-step"><span>3</span> Practica con un quiz</div></aside></div>
+        </section>
+
+        <section class="page" id="page-video" data-page="video">
+          <button class="back-link" data-action="back-lesson">← Volver al tema</button>
+          <div class="video-layout"><div class="video-main"><div class="video-player" id="videoPlayer"><div class="video-backdrop"><span class="video-deco">✦</span><div class="teacher-avatar">👩🏻‍🏫</div><div class="video-board"><span>Fracciones</span><div class="board-equation"><div class="fraction-circle small-fraction"><span class="quarter q1"></span><span class="quarter q2"></span><span class="quarter q3"></span><span class="quarter q4"></span></div><strong>3/4</strong></div></div></div><button class="video-play" id="videoPlay" aria-label="Reproducir video">▶</button><div class="video-controls"><span id="videoTime">00:00 / 06:45</span><div class="video-control-right"><span>⚙</span><span>⛶</span></div></div><div class="video-progress"><span id="videoProgress"></span></div></div><div class="video-title-row"><div><span class="eyebrow">MATEMÁTICA · FRACCIONES</span><h1>Fracciones — Explicación fácil y divertida</h1><p class="muted">Aprende qué son las fracciones, cómo se representan y algunos ejemplos.</p></div><button class="round-action" data-action="favorite-video" id="videoHeart">♡</button></div><div class="video-actions"><button data-action="like-video" id="likeButton">♡ <span>Me gusta</span></button><button data-action="save-video" id="saveButton">♧ <span>Guardar</span></button><button data-action="share-video">↗ <span>Compartir</span></button></div><button class="button button-primary button-wide video-quiz-cta" data-action="start-quiz">Practicar este tema <span>→</span></button></div><aside class="more-videos card-shell"><div class="card-heading"><div><span class="eyebrow">SIGUE APRENDIENDO</span><h2>Más videos</h2></div><span class="count-pill">3</span></div><button class="video-item" data-action="video-frac"><span class="video-mini purple-mini">⏱</span><span><strong>Tipos de fracciones</strong><small>5:12 · Matemática</small></span><b>›</b></button><button class="video-item" data-action="video-sum"><span class="video-mini pink-mini">▶</span><span><strong>Suma de fracciones</strong><small>6:30 · Matemática</small></span><b>›</b></button><button class="video-item" data-action="video-comp"><span class="video-mini mint-mini">✎</span><span><strong>Compara fracciones</strong><small>4:48 · Matemática</small></span><b>›</b></button></aside></div>
+        </section>
+
+        <section class="page" id="page-quiz" data-page="quiz">
+          <div class="quiz-top"><button class="back-link" data-action="exit-quiz">← Salir</button><span class="quiz-type" id="quizType">PRÁCTICA · FRACCIONES</span><span class="quiz-lives">✦ <b>+10 pts</b> por acierto</span></div><div class="quiz-progress-row"><div class="progress-track"><span id="quizBar" style="width:20%"></span></div><strong id="quizCounter">1 / 5</strong></div>
+          <div class="quiz-card card-shell"><div class="quiz-question-top"><span class="question-label">PREGUNTA <b id="questionNumber">01</b></span><span class="difficulty-pill">🟣 Nivel básico</span></div><h1 id="questionText">¿Qué fracción representa la parte sombreada?</h1><div class="question-visual" id="questionVisual"><div class="quiz-pie"><span class="pie-shade"></span><span class="pie-shade second"></span><span class="pie-shade third"></span></div></div><div class="answer-list" id="answerList"></div><div class="feedback hidden" id="quizFeedback"><span class="feedback-icon" id="feedbackIcon">✓</span><div><strong id="feedbackTitle">¡Correcto!</strong><p id="feedbackText">Muy bien, esa es la respuesta.</p></div></div><button class="button button-primary button-wide" id="quizNext" disabled>Siguiente pregunta <span>→</span></button></div><p class="quiz-encouragement">✨ Vas muy bien. ¡Confía en lo que has aprendido!</p>
+        </section>
+
+        <section class="page" id="page-challenge" data-page="challenge">
+          <div class="challenge-header"><span class="eyebrow">TU CONSTANCIA CUENTA</span><h1>Reto diario <span>🔥</span></h1><p class="muted">Pequeños pasos todos los días te acercan a tus metas.</p></div><article class="challenge-card card-shell"><div class="challenge-hero"><div class="challenge-flame">🔥</div><div><span class="eyebrow">MISIÓN DE HOY</span><h2>¡Tu reto de hoy!</h2><p>Completa estas actividades para ganar puntos.</p></div></div><div class="challenge-tasks"><div class="challenge-task"><span class="task-check" id="taskQuizCheck">✓</span><div><strong>Resuelve 5 preguntas de Matemática</strong><small>Practica lo que aprendiste</small></div><b id="taskQuizCount">2/5</b></div><div class="challenge-task"><span class="task-check done">✓</span><div><strong>Mira 1 video educativo</strong><small>Aprende algo nuevo</small></div><b>1/1</b></div><div class="challenge-task"><span class="task-check">○</span><div><strong>Repasa tus errores</strong><small>Refuerza lo que más cuesta</small></div><b id="taskErrorCount">0/1</b></div></div><button class="text-link" data-nav="errors" style="margin:0 0 12px">Repasar mis errores →</button><div class="challenge-rewards"><div><span>⭐</span><strong>+80</strong><small>Puntos</small></div><div><span>◷</span><strong>2 min</strong><small>Tiempo</small></div><div><span>🔥</span><strong>+1</strong><small>Racha</small></div></div><button class="button button-primary button-wide" data-action="daily">Continuar reto <span>→</span></button></article>
+        </section>
+
+        <section class="page" id="page-results" data-page="results">
+          <div class="results-wrap card-shell"><div class="results-confetti">✦　✧　✦</div><div class="result-trophy">🏆</div><span class="eyebrow">¡MISIÓN COMPLETADA!</span><h1>¡Excelente trabajo!</h1><p class="muted">Terminaste tu práctica. Cada pregunta te hace más fuerte.</p><div class="result-score"><div class="score-ring" id="scoreRing"><div><strong id="resultScore">4/5</strong><small>aciertos</small></div></div><div class="score-message"><strong id="resultPercent">¡Muy bien!</strong><p id="resultSummary">Has completado 4 de 5 preguntas.</p></div></div><div class="reward-row"><div><span>⭐</span><strong id="rewardPoints">+40</strong><small>Puntos</small></div><div><span>⏱️</span><strong>+2 min</strong><small>Tiempo</small></div><div><span>🔥</span><strong>+1</strong><small>Racha</small></div></div><div class="result-buttons"><button class="button button-secondary" data-action="review-answers">Revisar respuestas</button><button class="button button-primary" data-action="next-topic">Siguiente tema →</button></div></div>
+        </section>
+
+        <section class="page" id="page-progress" data-page="progress">
+          <div class="page-title-row"><div><span class="eyebrow">MIRA TODO LO QUE LOGRASTE</span><h1>Mi progreso</h1><p class="muted">Cada minuto de práctica cuenta. ¡Sigue así!</p></div><div class="period-select">Esta semana⌄</div></div>
+          <div class="progress-overview"><article class="card-shell overall-card"><div class="overall-ring"><div><strong id="overallPercent">72%</strong><small>completado</small></div></div><div><span class="eyebrow">TU AVANCE GENERAL</span><h2>¡Vas muy bien!</h2><p>Has completado <strong id="completedTopics">18 de 25 temas</strong>. Un paso más cada día.</p><div class="mini-achievements"><span>⭐ Nivel <b id="progressLevel">12</b></span><span>🔥 7 días seguidos</span></div></div></article><article class="card-shell study-time-card"><span class="eyebrow">TIEMPO DE ESTUDIO</span><div class="study-time-total">2h 35m</div><p class="muted">Esta semana</p><div class="week-bars"><div><i style="height:45%"></i><small>L</small></div><div><i style="height:70%"></i><small>M</small></div><div><i style="height:55%"></i><small>X</small></div><div><i style="height:90%"></i><small>J</small></div><div><i style="height:62%"></i><small>V</small></div><div><i style="height:35%"></i><small>S</small></div><div><i style="height:20%"></i><small>D</small></div></div></article></div>
+          <article class="card-shell subject-progress-card"><div class="card-heading"><div><span class="eyebrow">DESGLOSE POR MATERIA</span><h2>Tu progreso por materia</h2></div><button class="text-link" data-nav="subjects">Ver materias →</button></div><div class="progress-subject-list" id="progressSubjectList"></div></article>
+        </section>
+
+        <section class="page" id="page-badges" data-page="badges">
+          <div class="page-title-row"><div><span class="eyebrow">COLECCIONA TUS LOGROS</span><h1>Mis insignias</h1><p class="muted">Cada insignia cuenta una parte de tu historia.</p></div><div class="badge-count"><strong id="badgeEarned">3</strong><span>/ 8 obtenidas</span></div></div>
+          <div class="tabs badge-tabs"><button class="tab active" data-badge-tab="all">Todas</button><button class="tab" data-badge-tab="earned">Obtenidas</button><button class="tab" data-badge-tab="locked">Por lograr</button></div><div class="badges-grid" id="badgesGrid"></div>
+        </section>
+
+        <section class="page" id="page-errors" data-page="errors">
+          <div class="page-title-row"><div><span class="eyebrow">APRENDER DE LOS ERRORES</span><h1>Repaso de errores</h1><p class="muted">Volver a intentarlo también es avanzar.</p></div><div class="error-count" id="errorCount">0 pendientes</div></div>
+          <div class="error-intro"><span>💡</span><div><strong>¡Aquí tienes tus preguntas para repasar!</strong><p>Practica con calma las preguntas que necesitan un poquito más de atención.</p></div></div><div class="error-list" id="errorList"></div>
+        </section>
+
+        <section class="page" id="page-notifications" data-page="notifications">
+          <div class="page-title-row"><div><span class="eyebrow">NO TE PIERDAS NADA</span><h1>Notificaciones</h1><p class="muted">Tus novedades y recordatorios están aquí.</p></div><button class="text-link" data-action="mark-notifications">Marcar todas como leídas</button></div>
+          <div class="tabs notification-tabs"><button class="tab active" data-notice-tab="all">Todas</button><button class="tab" data-notice-tab="system">Sistema</button><button class="tab" data-notice-tab="achievement">Logros</button></div><div class="notification-list" id="notificationList"></div>
+        </section>
+
+        <section class="page" id="page-settings" data-page="settings">
+          <div class="page-title-row"><div><span class="eyebrow">PERSONALIZA TU ESPACIO</span><h1>Configuración</h1><p class="muted">Ajusta Study Swap a tu manera.</p></div></div>
+          <div class="settings-layout"><div class="settings-group card-shell"><h2>Cuenta</h2><button class="setting-row" data-action="edit-profile"><span class="setting-icon">👤</span><span><strong>Editar perfil</strong><small>Actualiza tus datos personales</small></span><b>›</b></button><button class="setting-row" data-action="password"><span class="setting-icon">🔐</span><span><strong>Cambiar contraseña</strong><small>Mantén tu cuenta segura</small></span><b>›</b></button><button class="setting-row" data-action="notification-prefs"><span class="setting-icon">🔔</span><span><strong>Preferencias de notificaciones</strong><small>Elige qué avisos quieres recibir</small></span><b>›</b></button></div><div class="settings-group card-shell"><h2>Apariencia</h2><div class="setting-row"><span class="setting-icon">🌙</span><span><strong>Modo oscuro</strong><small>Cambia el aspecto de la aplicación</small></span><label class="switch"><input type="checkbox" id="darkToggle"><span></span></label></div><div class="setting-row"><span class="setting-icon">🌐</span><span><strong>Idioma</strong><small>Idioma de la aplicación</small></span><select id="languageSelect" aria-label="Idioma"><option value="Español">Español</option><option value="English">English</option></select></div></div><div class="settings-group card-shell"><h2>Estudio</h2><div class="setting-row"><span class="setting-icon">⏰</span><span><strong>Recordatorio de estudio</strong><small>Todos los días a las 19:00</small></span><label class="switch"><input type="checkbox" id="reminderToggle" checked><span></span></label></div><div class="setting-row"><span class="setting-icon">🔊</span><span><strong>Sonidos</strong><small>Sonidos y efectos de la aplicación</small></span><label class="switch"><input type="checkbox" id="soundToggle" checked><span></span></label></div></div><div class="settings-group card-shell"><h2>Ayuda</h2><button class="setting-row" data-action="help"><span class="setting-icon">ⓘ</span><span><strong>Centro de ayuda</strong><small>Encuentra respuestas a tus dudas</small></span><b>›</b></button><button class="setting-row" data-action="feedback"><span class="setting-icon">✉</span><span><strong>Enviar sugerencia</strong><small>Cuéntanos cómo podemos mejorar</small></span><b>›</b></button><div class="settings-version">Study Swap <span>Versión 1.0.0</span></div></div><button class="button button-danger-outline logout-shortcut" data-nav="logout">Cerrar sesión</button></div>
+        </section>
+
+        <section class="page" id="page-logout" data-page="logout">
+          <div class="logout-card card-shell"><button class="close-logout" data-nav="home" aria-label="Volver">×</button><div class="logout-cap">🎓</div><h1>¿Cerrar sesión?</h1><p class="muted">Podrás volver a iniciar sesión en cualquier momento.</p><button class="button button-primary button-wide" data-action="confirm-logout">Cerrar sesión</button><button class="button button-secondary button-wide" data-nav="settings">Cancelar</button></div>
+        </section>
+      </div>
+      <footer class="app-footer"><span>© 2026 Study Swap</span><span>Aprende · Juega · Avanza <b>♥</b></span></footer>
+    </main>
+  </div>
+
+  <nav class="mobile-nav" aria-label="Navegación móvil"><button class="mobile-nav-item active" data-nav="home"><span>⌂</span><small>Inicio</small></button><button class="mobile-nav-item" data-nav="subjects"><span>▦</span><small>Materias</small></button><button class="mobile-nav-item" data-nav="progress"><span>▥</span><small>Progreso</small></button><button class="mobile-nav-item" data-nav="profile"><span>◉</span><small>Perfil</small></button></nav>
+
+  <div class="modal-backdrop hidden" id="modalBackdrop" role="presentation"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Cerrar">×</button><div id="modalContent"></div></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./app.js"></script>
+</body>
+</html>
